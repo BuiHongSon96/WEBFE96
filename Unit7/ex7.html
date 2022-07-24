@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/all.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Zent Blog</title>
     <style>
         @media all and (min-width: 768px) and (max-width: 991px){
@@ -25,6 +26,13 @@
                 flex-wrap: wrap;
                 width: 100%;
             }
+            .main-menu{
+                display: none !important;
+            }
+            #id1{
+                display: block: none;
+            }
+
 
         }
         @media all and (min-width: 320px) and (max-width: 767px){
@@ -60,6 +68,13 @@
                 flex-wrap: wrap;
                 width: 100% !important; 
             }
+            .main-menu{
+                display: none !important;
+            }
+            #id1{
+                display: block none;
+            }
+
         }
 
         @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
@@ -92,7 +107,6 @@ body {
     color: var(--color-black);
     line-height: 1.2;
 }
-/* header */
 .header {
     display: flex;
     flex-wrap: wrap;
@@ -115,13 +129,11 @@ body {
 .main-menu li {
     padding: 15px 10px;
 }
-/* end header */
 .container {
     max-width: 1000px;
     width: 100%;
     margin: 0 auto;
 }
-/* category blog */
 .box-post-1 {
     background-color: #f8f9fa;
     padding: 50px 0;
@@ -287,8 +299,6 @@ body {
 .paginate-item a {
     color: #fff;
 }
-/* end blog post */
-/* footer */
 .footer {
     background-color: #333333;
     color: #999999;
@@ -319,7 +329,6 @@ body {
     padding: 30px 0;
 }
 
-/* end footer */
     </style>
 </head>
 
@@ -327,21 +336,23 @@ body {
     <!-- header -->
     <div class="header">
         <div class="header_logo"><a href="#">Zent's Blog</a></div>
-        <div class="header_menu">
-            <ul class="main-menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Politics</a></li>
-                <li><a href="#">Tech</a></li>
-                <li><a href="#">Entertainment</a></li>
-                <li><a href="#">Travel</a></li>
-                <li><a href="#">Sports</a></li>
-                <li><a href="#"><i class="fas fa-search"></i></a></li>
-            </ul>
-        </div>
-    </div>
-    <!-- end header -->
+        <div id="id1"><i class="fa-solid fa-bars"></i>
+            <div class="header_menu">
 
-    <!-- body -->
+                <ul class="main-menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Politics</a></li>
+                    <li><a href="#">Tech</a></li>
+                    <li><a href="#">Entertainment</a></li>
+                    <li><a href="#">Travel</a></li>
+                    <li><a href="#">Sports</a></li>
+                    <li><a href="#"><i class="fas fa-search"></i></a></li>
+                </ul>
+                
+            </div>
+        </div>
+        <!-- <div id="id1"><i class="fa-solid fa-bars"></i></div> -->
+    </div>
     <div class="main-content">
         <div class="box-post-1">
             <div class="container">
@@ -520,9 +531,6 @@ body {
             </div>
         </div>
     </div>
-    <!-- end body -->
-
-    <!-- footer -->
     <div class="footer">
         <div class="container">
             <div class="footer-top">
@@ -564,8 +572,5 @@ body {
                 School</div>
         </div>
     </div>
-    <!-- end footer -->
-
 </body>
-
 </html>
