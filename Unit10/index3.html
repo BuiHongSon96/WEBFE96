@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var s = 0;
+        n = prompt('Mời bạn nhập số N: ')
+        m = prompt('Mời bạn nhập số M: ')
+        k = prompt('Mời bạn nhập số K: ')
+        for(var i = n; i <= m; i++){
+            if(i % k == 0){
+                s = s + i;
+            }
+        }
+        document.write('Tính tổng các số chia hết cho k trong khoảng từ N đến M:<br> ' + s)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
