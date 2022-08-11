@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #container {
+            position: relative;
+            margin: 0 auto;
+            max-width: 1000px;
+        }
+
+        #container:hover .btn {
+            display: block;
+        }
+
+        #content-dot {
+            display: flex;
+            position: absolute;
+            bottom: 0;
+            margin-bottom: 10px;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .slide {
+            display: none;
+        }
+
+        .slide img {
+            width: 100%;
+        }
+
+        .active {
+            display: block;
+        }
+
+        .btn {
+            position: absolute;
+            top: 45%;
+            font-size: 40px;
+            display: none;
+            cursor: pointer;
+        }
+
+        #next {
+            right: 0;
+        }
+
+        .dot {
+            width: 13px;
+            height: 13px;
+            border-radius: 50%;
+            background-color: yellow;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+
+        .active-dot {
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div class="slide">
+            <img src="./img/anh1.jpg" alt="">
+        </div>
+        <div class="slide">
+            <img src="./img/anh2.jpg" alt="">
+        </div>
+        <div class="slide">
+            <img src="./img/anh3.jpg" alt="">
+        </div>
+        <div class="slide">
+            <img src="./img/anh1.jpg" alt="">
+        </div>
+        <div class="slide">
+            <img src="./img/anh2.jpg" alt="">
+        </div>
+        <div id="prev" class="btn">
+            <i class="fa-solid fa-angle-left"></i>
+        </div>
+        <div id="next" class="btn">
+            <i class="fa-solid fa-angle-right"></i>
+        </div>
+        <div id="content-dot">
+            <div class="dot" onclick="activeDot(1)"></div>
+            <div class="dot" onclick="activeDot(2)"></div>
+            <div class="dot" onclick="activeDot(3)"></div>
+            <div class="dot" onclick="activeDot(4)"></div>
+            <div class="dot" onclick="activeDot(5)"></div>
+
+        </div>
+    </div>
+    <script>
+        var slideIndex = 1;
+        slideShow();
+        function slideShow() {
+            var slides = document.getElementsByClassName('slide');
+            var dots = document.getElementsByClassName('dot');
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+            if (slideIndex < 1) {
+                slideIndex = slides.length;
+            }
+
+            // if(slideIndex > slides.length){
+            //     slideIndex = 1;
+            // }
+
+            // if(slideIndex < 1){
+            //     slideIndex = slides.length;
+            // }
+
+            // xóa
+            for (var i = 0; i < slides.length; i++) {
+                slides[i].classList.remove('active');
+            }
+            for (var i = 0; i < slides.length; i++) {
+                dots[i].classList.remove('active-dot');
+            }
+            // hiện
+            slides[slideIndex - 1].classList.add('active')
+            dots[slideIndex - 1].classList.add('active-dot')
+        }
+
+        document.getElementById('next').addEventListener('click', function () {
+            slideIndex = slideIndex + 1;
+            slideShow();
+        })
+        document.getElementById('prev').addEventListener('click', function () {
+            slideIndex = slideIndex - 1;
+            slideShow();
+        })
+        setInterval(function () {
+            slideIndex = slideIndex + 1;
+            slideShow();
+        }, 5000)
+        function activeDot(n) {
+            slideIndex = n;
+            slideShow();
+        }
+
+
+    </script>
+</body>
+
+</html>

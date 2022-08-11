@@ -1,1 +1,66 @@
-nhap1.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+                * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #form-group{
+            display: flex;
+            margin-bottom: 15px;
+        }
+        label{
+        }
+        .error{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div class="form-group">
+            <label>Họ Và Tên</label>
+            <input type="text" placeholder="Nhập họ tên..." id="name">
+            <div class="error" id="error-name">nhập đủ họ tên</div>
+        </div>
+
+        <div class="form-group">
+            <label>Giới Tính</label>
+            <input type="radio" name="gender">Nam
+            <input type="radio" name="gender">Nữ
+        </div>
+
+        <div class="form-group">
+            <label>Email</label>
+            <input type="text" placeholder="Nhập Email..." id="mail">
+            <div class="error" id="error-mail">nhập Email</div>
+        </div>
+
+        <div class="form-group">
+            <label>Số Điện Thoại</label>
+            <input type="text" placeholder="Nhập số điện thoại..." id="phone">
+            <div class="error" id="error-phone">nhập sdt</div>
+        </div>
+
+        <div class="form-group">
+            <label>Mật Khẩu</label>
+            <input type="password" placeholder="Yêu cầu nhập mật khẩu" id="pass>
+            <div class="error" id="error-pass">nhập đủ hvt</div>
+        </div>
+
+        <div class="form-group">
+            <label>Xác Nhận pass</label>
+            <input type="text" id="cofirm-pass">
+            <div class="error" id="error-cofirm-pass">xác nhận pass</div>
+        </div>
+
+    </form>
+</body>
+</html>
