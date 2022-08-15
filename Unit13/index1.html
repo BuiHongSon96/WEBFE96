@@ -15,13 +15,11 @@
             padding: 0;
             box-sizing: border-box;
         }
-
         #container {
             position: relative;
             margin: 0 auto;
             max-width: 1000px;
         }
-
         #container:hover .btn {
             display: block;
         }
@@ -103,7 +101,6 @@
             <div class="dot" onclick="activeDot(3)"></div>
             <div class="dot" onclick="activeDot(4)"></div>
             <div class="dot" onclick="activeDot(5)"></div>
-
         </div>
     </div>
     <script>
@@ -118,27 +115,15 @@
             if (slideIndex < 1) {
                 slideIndex = slides.length;
             }
-
-            // if(slideIndex > slides.length){
-            //     slideIndex = 1;
-            // }
-
-            // if(slideIndex < 1){
-            //     slideIndex = slides.length;
-            // }
-
-            // xóa
             for (var i = 0; i < slides.length; i++) {
                 slides[i].classList.remove('active');
             }
             for (var i = 0; i < slides.length; i++) {
                 dots[i].classList.remove('active-dot');
             }
-            // hiện
             slides[slideIndex - 1].classList.add('active')
             dots[slideIndex - 1].classList.add('active-dot')
         }
-
         document.getElementById('next').addEventListener('click', function () {
             slideIndex = slideIndex + 1;
             slideShow();
@@ -155,8 +140,6 @@
             slideIndex = n;
             slideShow();
         }
-
-
     </script>
 </body>
 
