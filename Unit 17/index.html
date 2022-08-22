@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../Unit14/JS/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style>
+        #container {
+            width: 100%;
+        }
+
+        #menu {
+            width: 70%;
+            height: 50px;
+            margin-left: 15%;
+        }
+        #menu1{
+            width: 100%;
+            height: 50px;
+        }
+        #img-menu1{
+            width: 100px;
+            height: 20px;
+        }
+
+        a:hover {
+            color: blue;
+        }
+
+        a {
+            margin-left: 2%;
+        }
+
+        #but {
+            margin-left: 28%;
+        }
+
+        #but-download {
+            color: blue;
+            border-radius: 3px;
+            border-color: blue;
+        }
+
+        #content-1 {
+            width: 70%;
+            height: 400px;
+            margin-left: 15%;
+        }
+
+        #content-11 {
+            width: 70%;
+            float: left;
+        }
+
+        #content-12 {
+            width: 30%;
+            float: left;
+            text-align: center;
+        }
+
+        .content-12 {
+            width: 80%;
+            height: 100%;
+            margin-left: 10%;
+            margin-top: 5%;
+        }
+
+        #send {
+            color: white;
+            background-color: blue;
+            border: none;
+            width: 100%;
+            height: 30px;
+            border-radius: 5px;
+        }
+
+        .input-text {
+            width: 100%;
+            height: 30px;
+        }
+
+        #text-area {
+            width: 100%;
+        }
+
+        #content-2 {
+            width: 40%;
+            height: 100px;
+            margin-left: 30%;
+            text-align: center;
+        }
+
+        #content-3 {
+            width: 70%;
+            height: 250px;
+            margin-left: 15%;
+            margin-top: 30px;
+        }
+
+        #content-31 {
+            width: 30%;
+            height: 100%;
+            float: left;
+            text-align: center;
+        }
+
+        #content-32 {
+            width: 30%;
+            height: 100%;
+            float: left;
+            margin-left: 5%;
+            text-align: center;
+        }
+
+        #content-33 {
+            width: 30%;
+            height: 100%;
+            float: left;
+            margin-left: 5%;
+            text-align: center;
+        }
+
+        #content-4 {
+            width: 100%;
+            height: 400px;
+            margin-top: 40px;
+        }
+
+        #content-41 {
+            width: 50%;
+            height: 100%;
+            background-color: rgba(0, 89, 255, 0.993);
+            color: white;
+            float: left;
+        }
+
+        #content-411 {
+            padding-top: 100px;
+            padding-left: 250px;
+        }
+
+        #content-42 {
+            width: 50%;
+            height: 100%;
+            float: left;
+        }
+
+        img {
+            max-width: 100%;
+            height: 100%;
+        }
+
+        #content-5 {
+            width: 40%;
+            height: 100px;
+            margin-left: 30%;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        #content-6 {
+            width: 70%;
+            height: 500px;
+            margin-left: 15%;
+            margin-top: 30px;
+        }
+
+        #content-61 {
+            width: 30%;
+            height: 100%;
+            float: left;
+            text-align: center;
+        }
+
+        #content-62 {
+            width: 30%;
+            height: 100%;
+            float: left;
+            margin-left: 5%;
+            text-align: center;
+        }
+
+        #content-63 {
+            width: 30%;
+            height: 100%;
+            float: left;
+            margin-left: 5%;
+            text-align: center;
+        }
+
+        h4 {
+            color: blue;
+        }
+
+        #content-7 {
+            width: 60%;
+            height: 300px;
+            padding-top: 20px;
+            text-align: center;
+            margin-left: 20%;
+        }
+        #content-8{
+            width: 100%;
+            height: 600px;
+        }
+        #img-content-8{
+            width: 100%;
+            height: 600px;
+        }
+        #content-9{
+            width: 60%;
+            height: 150px;
+            margin-left: 20%;
+            padding-top: 30px;
+        }
+        #content-91{
+            width: 20%;
+            float: left;
+        }
+        #content-92{
+            width: 20%;
+            float: left;
+            padding-left: 5%;
+        }
+        #content-93{
+            width: 20%;
+            float: left;
+            padding-left: 5%;
+        }
+        #content-94{
+            width: 20%;
+            float: left;
+            padding-left: 5%;
+        }
+        #content-10{
+            width: 60%;
+            height: 500px;
+            margin-left: 20%;
+        }
+        #content-101{
+            width: 60%;
+            height: 200px;
+            margin-left: 20%;
+            text-align: center;
+        }
+        #content-103{
+            width: 100%;
+            height: 50px;
+        }
+        #content-1021{
+            width: 40%;
+            float: left;
+        }
+        #content-1022{
+            float: left;
+            width: 50%;
+            margin-left: 10%;
+        }
+        .content-1021{
+            width: 100%;
+            height: 30px;
+        }
+        #content-10221{
+            width: 100%;
+            height: 200px;
+        }
+        #but-sendmessager{
+            width: 120px;
+            height: 30px;
+            color: white;
+            background-color: blue;
+            border: none;
+            border-radius: 3px;
+            margin-right: 50px;
+        }
+        #content-11{
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="menu">
+            <div id="menu1">
+                <img id="img-menu1" src="./logo-dark.png" alt="">
+                <!-- <a id="a-big">ZORIAL</a> -->
+                <a>Home</a>
+                <a>Home</a>
+                <a>Home</a>
+                <a>Home</a>
+                <a>Home</a>
+                <a>Home</a>
+                <a>Home</a>
+                <a id="but"><button id="but-download">Download</button></a>
+            </div>
+        </div>
+        <div id="content-1">
+            <div id="content-11">
+                <img src="./hero-1-img.png" alt="">
+            </div>
+            <div id="content-12">
+                <a>Lorem ipsum dolor sit amet.</a>
+                <h3>Lorem ipsum dolor sit amet.</h3>
+                <div class="content-12">
+                    <input class="input-text" type="text" placeholder="Enter you name">
+                </div>
+                <div class="content-12">
+                    <input class="input-text" type="text" placeholder="Enter you mail">
+                </div>
+                <div class="content-12">
+                    <textarea name="" id="text-area" cols="20" rows="5" placeholder="Write your massager"></textarea>
+                </div>
+                <div class="content-12">
+                    <button id="send">SEND</button>
+                </div>
+                <div class="content-12">
+                    <input type="checkbox">Lorem ipsum dolor sit amet.
+                </div>
+            </div>
+        </div>
+        <div id="content-2">
+            <h3>Lorem ipsum dolor sit.</h3>
+            <p>Lorem ipsum dolo ab minima? Cum pariatur officiis id libero alias in architecto, ducimus ad? Explicabo,
+                aut obcaecati?</p>
+        </div>
+        <div id="content-3">
+            <div id="content-31">
+                <div>
+                    <img src="./icon-1.png" alt="">
+                </div>
+                <div>
+                    <h4>Lorem ipsum dolor sit.</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, quae.</p>
+                    <p>Learn More</p>
+                </div>
+            </div>
+            <div id="content-32">
+                <div>
+                    <img src="./icon-1.png" alt="">
+                </div>
+                <div>
+                    <h4>Lorem ipsum dolor sit.</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, quae.</p>
+                    <p>Learn More</p>
+                </div>
+            </div>
+            <div id="content-33">
+                <div>
+                    <img src="./icon-1.png" alt="">
+                </div>
+                <div>
+                    <h4>Lorem ipsum dolor sit.</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, quae.</p>
+                    <p>Learn More</p>
+                </div>
+            </div>
+        </div>
+        <div id="content-4">
+            <div id="content-41">
+                <div id="content-411">
+                    <h3>Lorem ipsum dolor sit amet.</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ullam sequi dolore modi et voluptate
+                        possimus consectetur nulla quis ipsum.</p>
+                    <p>&#8859; Design</p>
+                    <p>&#8859; Design</p>
+                    <p>&#8859; Design</p>
+                </div>
+            </div>
+            <div id="content-42">
+                <img id="content-422" src="./feature-bg.jpg" alt="">
+            </div>
+        </div>
+        <div id="content-5">
+            <h3>Lorem ipsum dolor sit.</h3>
+            <p>Lorem ipsum dolo ab minima? Cum pariatur officiis id libero alias in architecto, ducimus ad? Explicabo,
+                aut obcaecati?</p>
+        </div>
+        <div id="content-6">
+            <div id="content-61">
+                <div>
+                    <img src="./price-1.jpg" alt="">
+                </div>
+                <div>
+                    <p>&#9760; CustomCharts CustomCharts</p>
+                </div>
+                <div>
+                    <p>&#9760; CustomCharts CustomCharts</p>
+                </div>
+                <div>
+                    <p>&#9760; CustomCharts CustomCharts</p>
+                </div>
+                <div>
+                    <p>&#9760; CustomCharts CustomCharts</p>
+                </div>
+                <div>
+                    <h4>CustomCharts</h4>
+                </div>
+            </div>
+            <div id="content-62">
+                <div>
+                    <img src="./price-2.jpg" alt="">
+                </div>
+                <div>
+                    <p>&#9760; CustomCharts CustomCharts</p>
+                </div>
+                <div>
+                    <p>&#9760; CustomCharts CustomCharts</p>
+                </div>
+                <div>
+                    <p>&#9760; CustomCharts CustomCharts</p>
+                </div>
+                <div>
+                    <p>&#9760; CustomCharts CustomCharts</p>
+                </div>
+                <div>
+                    <h4>CustomCharts</h4>
+                </div>
+            </div>
+            <div id="content-63">
+                <div>
+                    <img src="./price-3.jpg" alt="">
+                </div>
+                <div>
+                    <p>&#9760; CustomCharts CustomCharts</p>
+                </div>
+                <div>
+                    <p>&#9760; CustomCharts CustomCharts</p>
+                </div>
+                <div>
+                    <p>&#9760; CustomCharts CustomCharts</p>
+                </div>
+                <div>
+                    <p>&#9760; CustomCharts CustomCharts</p>
+                </div>
+                <div>
+                    <h4>CustomCharts</h4>
+                </div>
+            </div>
+        </div>
+        <div id="content-7">
+            <div>
+                <img src="./quote-icon.png" alt="">
+            </div>
+            <div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil aliquid ad provident adipisci natus
+                    quas, fugiat sit ducimus voluptatibus distinctio.</p>
+                <p>consectetur adipisicing</p>
+                <p>&#9867; &#9866; &#9867;</p>
+            </div>
+        </div>
+        <div id="content-8">
+            <img id="img-content-8" src="./faq-bg.jpg" alt="">
+        </div>
+        <div id="content-9">
+            <div id="content-91">
+                <img src="./brand-logo-1.png" alt="">
+            </div>
+            <div id="content-92">
+                <img src="./brand-logo-2.png" alt="">
+            </div>
+            <div id="content-93">
+                <img src="./brand-logo-3.png" alt="">
+            </div>
+            <div id="content-94">
+                <img src="./brand-logo-4.png" alt="">
+            </div>
+        </div>
+        <div id="content-10">
+            <div id="content-101">
+                <h3>Contact Us</h3>
+                <p>&#9866;</p>
+                <h5>Lorem ipsum dolor sit amet.</h5>
+                <p>Lorem ipsum dolor sit  Ullam quaerat amet voluptate dolorum? Quam officiis architecto rem, error quasi quidem!</p>
+            </div>
+            <div id="content-102">
+                <div id="content-1021">
+                    <p>you name</p>
+                    <input class="content-1021" type="text" placeholder="you name">
+                    <p>mail</p>
+                    <input class="content-1021" type="text" placeholder="mail">
+                    <p>subject</p>
+                    <input class="content-1021" type="text" placeholder="enter number">
+                </div>
+                <div id="content-1022">
+                    <p>massager</p>
+                    <textarea id="content-10221" name="" id="" cols="30" rows="10" placeholder="enter you massager"></textarea>
+                    <button id="but-sendmessager">Send messager</button>
+                </div>
+            </div>
+        </div>
+        <div id="content-11">
+
+        </div>
+    </div>
+</body>
+
+</html>

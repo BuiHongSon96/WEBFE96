@@ -90,7 +90,7 @@
             <img id="anh-3" src="./img/anh-3.jpg" alt="">
             <i id="i3" class="the-i">Ảnh Đẹp</i>
         </div>
-        <div id="img4" class="img1">
+        <div id="img4" class="img1">`   
             <img id="anh-4" src="./img/anh-4.jpg" alt="">
             <i id="i4" class="the-i">Ảnh Đẹp</i>
         </div>
@@ -100,95 +100,38 @@
     </div>
     <script>
         $(document).ready(function () {
-            $('#i1').hide();
-            $('#X').hide();
-            $('#img1').on('click', function () {
-                $('.img1').css('z-index', 1)
-                $('#img1').css('z-index', 2)
-                $('#anh-1').animate({
-                    'left': "100px",
-                    'width': "500px",
-                    'height': "500px"
-                }, 3000)
-                $('#i1').show();
-                $('#X').show();
-                $('#anh-2').hide();
-                $('#anh-3').hide();
-                $('#anh-4').hide();
-                $('#container').css({'background': 'rgb(106, 148, 182)'})
-            })
-            $('#i2').hide();
-            $('#X').hide();
-            $('#img2').on('click', function () {
-                $('.img1').css('z-index', 1)
-                $('#img2').css('z-index', 3)
-                $('#anh-2').animate({
-                    'left': "100px",
-                    'width': "500px",
-                    'height': "500px"
-                }, 3000)
-                $('#i2').show();
-                $('#X').show();
-                $('#anh-1').hide();
-                $('#anh-3').hide();
-                $('#anh-4').hide();
-                $('#container').css({'background': 'rgb(106, 148, 182)'})
-
-            })
-            $('#i3').hide();
-            $('#X').hide();
-            $('#img3').on('click', function () {
-                $('.img1').css('z-index', 1)
-                $('#img3').css('z-index', 2)
-                $('#anh-3').animate({
-                    'left': "100px",
-                    'width': "500px",
-                    'height': "500px"
-                }, 3000)
-                $('#i3').show();
-                $('#X').show();
-                $('#anh-2').hide();
-                $('#anh-1').hide();
-                $('#anh-4').hide();
-                $('#container').css({'background': 'rgb(106, 148, 182)'})
-
-
-            })
-            $('#i4').hide();
-            $('#X').hide();
-            $('#img4').on('click', function () {
-                $('.img1').css('z-index', 1)
-                $('#img4').css('z-index', 2)
-                $('#anh-4').animate({
-                    'right': "100px",
-                    'width': "500px",
-                    'height': "500px"
-                }, 3000)
-                $('#i4').show();
-                $('#X').show();
-                $('#anh-2').hide();
-                $('#anh-3').hide();
-                $('#anh-1').hide();
-                $('#container').css({'background': 'rgb(106, 148, 182)'})
-
-
-            })
-
-            $('#X').on('click', function () {
-
-                $('.img1').children('img').animate({
-                    'left': "0px",
-                    'width': "250px",
-                    'height': "250px"
-                }, 3000)
-                $('.the-i').hide();
-                $('#X').hide();
-                $('#container').css({'background': 'rgb(166, 231, 188)'})
-
-            })
-
+        })
+        $('.the-i').hide();
+        $('#X').hide();
+        $('.img1').on('click', function () {
+            $('.img1').css('z-index', 1);
+            $(this).css('z-index', 2)
+            $(this).find('img').animate({
+                'position': 'fixed',
+                'top': '50%',
+                'left': '50%',
+                'transform': 'translateX(-50%) translateY(-50%)',
+                'width': "500px",
+                'height': "500px"
+            }, 1000)
+            $('.the-i').show();
+            $('#X').show();
 
         })
+
+
+        $('#X').on('click', function () {
+            $('.img1').children('img').animate({
+                'position': 'relative',
+                'transform': 'none',
+                'width': "250px",
+                'height': "250px"
+            }, 1000)
+            $('.the-i').hide();
+            $('#X').hide();
+            $('#container').css({ 'background': 'rgb(166, 231, 188)' })
+        })
+
     </script>
 </body>
 
