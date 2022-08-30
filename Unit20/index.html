@@ -13,12 +13,93 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <style>
-        .img-1{
+        .rong{
+            height: 100px;
+        }
+        .img-1 {
             height: 35px;
         }
-        .img-banner{
+
+        .background-img-1 {
             background-image: url(./img/1.png);
-            height: 500px;
+        }
+
+        .img-3 {
+            height: 200px;
+        }
+
+        .img-3-1 {
+            float: left;
+            background-color: pink;
+            width: 50%;
+            height: 100%;
+        }
+
+        .img-3-2 {
+            float: left;
+            background-color: pink;
+            width: 50%;
+            height: 100%;
+        }
+        .img-big{
+            max-height: 400px;
+        }
+
+        .center {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .img-4 {
+            height: 400px;
+            background-color: rgb(210, 230, 243);
+        }
+        .bred{
+            color: red;
+        }
+        .hoa{
+            float: left;
+            width: 25%;
+            height: 150px;
+        }
+        .img-hoa{
+            height: 100px;
+            width: 100%;
+            background-image: url(./img/shape5.png);
+            color: white;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        .text-hoa{
+            text-align: center;
+        }
+        .h2{
+            padding-top: 30%;
+        }
+        .img-content{
+            width: auto;
+            height: 310px;
+            background-image: url(./img/4.png);
+            border-radius: 5px;
+        }
+        .text-content{
+            width: 100%;
+            height: 100%;
+            text-align: right;
+            color: white;
+        }
+        .img-footer{
+            background-color: rgb(119, 119, 119);
+            color: white;
+        }
+        .the-a{
+            float: left;
+            width: 30px;
+            height: 30px;
+            border: none;
+        }
+        .end{
+            height: 60px;
         }
     </style>
 </head>
@@ -46,28 +127,32 @@
     <main>
         <div class="banner-wrap">
             <div class="container">
-                <a class="navbar-brand" href="#">
-                    <p><b>
-                            <h1>&#128693; Kidol</h1>
-                        </b></p>
-                </a>
-                <ul class="nav justify-content-end" style="text-align: center;">
-                    <li class="nav-item">
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="search Everything"
-                                aria-label="Recipient's username" aria-describedby="basic-addon2">
-                            <div class="input-group-append">
-                                <span class="input-group-text" id="basic-addon2">&#8635;</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">&#128420; </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">&#128188;</a>
-                    </li>
-                </ul>
+                <div class="row">
+                    <div class="col-lg-6 col-12">
+                        <a class="navbar-brand" href="#">
+                            <img class="img-fluid" src="./img/logo.png" alt="">
+                        </a>        
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <ul class="nav justify-content-end" style="text-align: center;">
+                            <li class="nav-item">
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" placeholder="search Everything"
+                                        aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text" id="basic-addon2">&#8635;</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">&#128420; </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">&#128188;</a>
+                            </li>
+                        </ul>        
+                    </div>
+                </div>
             </div>
         </div>
         <hr>
@@ -128,15 +213,496 @@
                         <a class="dropdown-item" href="#">Separated link</a>
                     </div>
                 </li>
-    
+
             </ul>
-    
+
         </div>
-        <div class="banner-wrap img-banner" >
-            <img class="img-1" src="./img/1 (3).png" alt="">
+        <div class="banner-wrap background-img-1">
+            <img class="img-fluid" class="img-1" src="./img/1 (3).png" alt="">
+            <div class="row  container-fluid">
+                <div class="col-lg-6 col-12">
+                    <div class="p-5">
+                        <h1 class="display-4 font-weight-bold">Best kis store & online shop</h1>
+                        <p class="font-weight-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus,
+                            quisquam!</p>
+                        <p></p>
+                        <a class="btn btn-primary btn-lg btn-danger" href="#" role="button">Shop this now</a>
+                        <p></p>
+                        <p> &#127948; &#127948; &#127948; &#127948; &#127948; &#127948;</p>
+                        <p> &#127948; &#127948; &#127948; &#127948; &#127948; &#127948;</p>
+                        <p> &#127948; &#127948; &#127948; &#127948; &#127948; &#127948;</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <img class="img-fluid" src="./img/2.png" alt="">
+                </div>
+            </div>
+            <div class="row  container-fluid">
+                <div class="col-lg-12 col-12">
+                    <img class="img-fluid" src="./img/2 (3).png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="rong"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-12">
+                    <div class="img-3">
+                        <div class="img-3-1 container">
+                            <p>
+                            <h3>Baby Dress</h3>
+                            </p>
+                            <p>
+                            <h4>$32.00</h4>
+                            </p>
+                            <p><b>Shop Now</b></p>
+                        </div>
+                        <div class="img-3-2">
+                            <img class="img-fluid" src="./img/7.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12">
+                    <div class="img-3">
+                        <div class="img-3-1 container">
+                            <p>
+                            <h3>Baby Dress</h3>
+                            </p>
+                            <p>
+                            <h4>$32.00</h4>
+                            </p>
+                            <p><b>Shop Now</b></p>
+                        </div>
+                        <div class="img-3-2">
+                            <img class="img-fluid" src="./img/7.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12">
+                    <div class="img-3">
+                        <div class="img-3-1 container">
+                            <p>
+                            <h3>Baby Dress</h3>
+                            </p>
+                            <p>
+                            <h4>$32.00</h4>
+                            </p>
+                            <p><b>Shop Now</b></p>
+                        </div>
+                        <div class="img-3-2">
+                            <img class="img-fluid" src="./img/7.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="center">
+                <h2><b>Get Every Solution</b></h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore, dicta?</p>
+                <p>Don't you get what you want?</p>
+                <button type="button" class="btn btn-outline-danger">Danger</button>
+                <button type="button" class="btn btn-outline-danger">Danger</button>
+                <button type="button" class="btn btn-outline-danger">Danger</button>
+            </div>
+            <div class="rong"></div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="img-4">
+                        <div class="img-4-1 container">
+                            <img class="img-fluid" src="./img/9.png" alt="">
+                        </div>
+                        <div class="img-4-2 container">
+                            <p>&#10026;&#10026;&#10026;&#10026;&#10026;</p>
+                            <b>Lorem ipsum dolor sit.</b>
+                            <b>$999.999</b>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="img-4">
+                        <div class="img-4-1 container">
+                            <img class="img-fluid" src="./img/9.png" alt="">
+                        </div>
+                        <div class="img-4-2 container">
+                            <p>&#10026;&#10026;&#10026;&#10026;&#10026;</p>
+                            <b>Lorem ipsum dolor sit.</b>
+                            <b>$999.999</b>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="img-4">
+                        <div class="img-4-1 container">
+                            <img class="img-fluid" src="./img/9.png" alt="">
+                        </div>
+                        <div class="img-4-2 container">
+                            <p>&#10026;&#10026;&#10026;&#10026;&#10026;</p>
+                            <b>Lorem ipsum dolor sit.</b>
+                            <b>$999.999</b>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="img-4">
+                        <div class="img-4-1 container">
+                            <img class="img-fluid" src="./img/9.png" alt="">
+                        </div>
+                        <div class="img-4-2 container">
+                            <p>&#10026;&#10026;&#10026;&#10026;&#10026;</p>
+                            <b>Lorem ipsum dolor sit.</b>
+                            <b>$999.999</b>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <p></p>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="img-4">
+                        <div class="img-4-1 container">
+                            <img class="img-fluid" src="./img/9.png" alt="">
+                        </div>
+                        <div class="img-4-2 container">
+                            <p>&#10026;&#10026;&#10026;&#10026;&#10026;</p>
+                            <b>Lorem ipsum dolor sit.</b>
+                            <b>$999.999</b>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="img-4">
+                        <div class="img-4-1 container">
+                            <img class="img-fluid" src="./img/9.png" alt="">
+                        </div>
+                        <div class="img-4-2 container">
+                            <p>&#10026;&#10026;&#10026;&#10026;&#10026;</p>
+                            <b>Lorem ipsum dolor sit.</b>
+                            <b>$999.999</b>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="img-4">
+                        <div class="img-4-1 container">
+                            <img class="img-fluid" src="./img/9.png" alt="">
+                        </div>
+                        <div class="img-4-2 container">
+                            <p>&#10026;&#10026;&#10026;&#10026;&#10026;</p>
+                            <b>Lorem ipsum dolor sit.</b>
+                            <b>$999.999</b>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="img-4">
+                        <div class="img-4-1 container">
+                            <img class="img-fluid" src="./img/9.png" alt="">
+                        </div>
+                        <div class="img-4-2 container">
+                            <p>&#10026;&#10026;&#10026;&#10026;&#10026;</p>
+                            <b>Lorem ipsum dolor sit.</b>
+                            <b>$999.999</b>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="rong"></div>
+        <div class="banner-wrap background-img-1">
+            <div class="row container-fluid">
+                <div class="col-lg-12 col-12">
+                    <div class="img-1">
+                        <img class="img-fluid" src="./img/1 (3).png" alt="">
+                    </div>          
+                </div>
+            </div>
+            <div class="row container-fluid">
+                <div class="col-lg-4 col-12">
+                    <img class="img-fluid img-big" src="./img/1 (2).png" alt="">
+                </div>
+
+                <div class="col-lg-4 col-12">
+                    <div class="center">
+                        <h2><b>Get Every Solution</b></h2>
+                        <b class="bred">UP TO 35% OFF</b> <b>ON ALL OTHER BABY PRODUCTS</b>
+                    </div>
+                    <div>
+                        <div class="hoa">
+                            <div class="img-hoa">
+                                <b><h2 class="h2">69</h2></b>
+                            </div>
+                            <div class="text-hoa">
+                                <b>DAYs</b>
+                            </div>
+                        </div>
+                        <div class="hoa">
+                            <div class="img-hoa">
+                                <b><h2 class="h2">69</h2></b>
+                            </div>
+                            <div class="text-hoa">
+                                <b>DAYs</b>
+                            </div>
+                        </div>
+                        <div class="hoa">
+                            <div class="img-hoa">
+                                <b><h2 class="h2">69</h2></b>
+                            </div>
+                            <div class="text-hoa">
+                                <b>DAYs</b>
+                            </div>
+                        </div>
+                        <div class="hoa">
+                            <div class="img-hoa">
+                                <b><h2 class="h2">69</h2></b>
+                            </div>
+                            <div class="text-hoa">
+                                <b>DAYs</b>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="center">
+                        <button type="button" class="btn btn-danger">Danger</button>
+                    </div>
+                    <!-- <div>
+                        <div class="center">
+                            <h2><b>Get Every Solution</b></h2>
+                            <b class="bred">UP TO 35% OFF</b> <b>ON ALL OTHER BABY PRODUCTS</b>
+                        </div>            
+                    </div>
+                    <div class="hoa">
+                        <div class="img-hoa img-fluid">
+                            <b><h2>69</h2></b>
+                        </div>
+                        <div class="text-hoa">
+                            <b>DAYs</b>
+                        </div>
+                    </div>
+                    <div class="hoa">
+                        <div class="img-hoa img-fluid">
+                            <b><h2>69</h2></b>
+                        </div>
+                        <div class="text-hoa">
+                            <b>DAYs</b>
+                        </div>
+                    </div>
+                    <div class="hoa">
+                        <div class="img-hoa img-fluid">
+                            <b><h2>69</h2></b>
+                        </div>
+                        <div class="text-hoa">
+                            <b>DAYs</b>
+                        </div>
+                    </div>
+                    <div class="hoa">
+                        <div class="img-hoa img-fluid">
+                            <b><h2>69</h2></b>
+                        </div>
+                        <div class="text-hoa">
+                            <b>DAYs</b>
+                        </div>
+                    </div>
+                    <div>1</div>
+                     -->
+                </div>
+
+                <div class="col-lg-4 col-12">
+                    <img class="img-fluid img-big" src="./img/2 (2).png" alt="">
+                </div>
+            </div>
+            <div>
+                <img class="img-fluid" src="./img/shape2.png" alt="">
+            </div>
+        </div>
+        <div class="rong"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-12">
+                    <div class="img-content">
+                        <div class="container text-content">
+                            <p><h3>COLLECTION</h3></p>
+                            <p><b>Flat 20% off</b></p>
+                            <p>
+                                <button type="button" class="btn btn-danger">Danger</button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div class="img-content">
+                        <div class="container text-content">
+                            <p><h3>COLLECTION</h3></p>
+                            <p><b>Flat 20% off</b></p>
+                            <p>
+                                <button type="button" class="btn btn-danger">Danger</button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="rong"></div>
+        <div class="center">
+            <h2><b>Get Every Solution</b></h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore, dicta?</p>
+            <p>Don't you get what you want?</p>
+        </div>
+        <div class="rong"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="img-4">
+                        <div class="img-4-1 container">
+                            <img class="img-fluid" src="./img/9.png" alt="">
+                        </div>
+                        <div class="img-4-2 container">
+                            <p>&#10026;&#10026;&#10026;&#10026;&#10026;</p>
+                            <b>Lorem ipsum dolor sit.</b>
+                            <b>$999.999</b>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="img-4">
+                        <div class="img-4-1 container">
+                            <img class="img-fluid" src="./img/9.png" alt="">
+                        </div>
+                        <div class="img-4-2 container">
+                            <p>&#10026;&#10026;&#10026;&#10026;&#10026;</p>
+                            <b>Lorem ipsum dolor sit.</b>
+                            <b>$999.999</b>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="img-4">
+                        <div class="img-4-1 container">
+                            <img class="img-fluid" src="./img/9.png" alt="">
+                        </div>
+                        <div class="img-4-2 container">
+                            <p>&#10026;&#10026;&#10026;&#10026;&#10026;</p>
+                            <b>Lorem ipsum dolor sit.</b>
+                            <b>$999.999</b>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="img-4">
+                        <div class="img-4-1 container">
+                            <img class="img-fluid" src="./img/9.png" alt="">
+                        </div>
+                        <div class="img-4-2 container">
+                            <p>&#10026;&#10026;&#10026;&#10026;&#10026;</p>
+                            <b>Lorem ipsum dolor sit.</b>
+                            <b>$999.999</b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rong"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-12">
+                        <img class="img-fluid" src="./img/1.jpg" alt="">
+                        <p>
+                            <a class="text-muted">By,</a>
+                            <a class="text-danger">June cha</a>
+                            <a>. 25 MAY,2121</a>
+                        </p>
+                        <p>
+                            <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, aperiam?</h3>
+                        </p>
+                        <button type="button" class="btn btn-danger">Danger</button>
+                    </div>
+                    <div class="col-lg-4 col-12">
+                        <img class="img-fluid" src="./img/1.jpg" alt="">
+                        <p>
+                            <a class="text-muted">By,</a>
+                            <a class="text-danger">June cha</a>
+                            <a>. 25 MAY,2121</a>
+                        </p>
+                        <p>
+                            <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, aperiam?</h3>
+                        </p>
+                        <button type="button" class="btn btn-danger">Danger</button>
+                    </div>
+                    <div class="col-lg-4 col-12">
+                        <img class="img-fluid" src="./img/1.jpg" alt="">
+                        <p>
+                            <a class="text-muted">By,</a>
+                            <a class="text-danger">June cha</a>
+                            <a>. 25 MAY,2121</a>
+                        </p>
+                        <p>
+                            <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, aperiam?</h3>
+                        </p>
+                        <button type="button" class="btn btn-danger">Danger</button>
+                    </div>
+                </div>
+            </div>
+            <div class="rong"></div>
         </div>
     </main>
-    <footer></footer>
+    <footer>
+        <div class="banner-wrap img-footer">
+            <div class="rong"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-12">
+                        <img class="img-fluid" src="./img/logo-light.png" alt="">
+                        <p>Lorem, ipsum dolor sit  ipsam incidunt recusandae, mollitia consectetur est dolore cumque tempora reiciendis vitae cum, voluptatum ullam atque saepe?</p>
+                        <ul>
+                            <li>
+                                <div class="the-a"><i class="fa-brands fa-facebook-f"></i></div>
+                                <div class="the-a"><i class="fa-brands fa-instagram"></i></div>
+                                <div class="the-a"><i class="fa-brands fa-twitter"></i></div>
+                                <div class="the-a"><i class="fa-solid fa-dog"></i></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-12">
+                        <h4><b>I Love You</b></h4>
+                        <p>-Trang</p>
+                        <p>-Mai</p>
+                        <p>-Huyen</p>
+                        <p>-Tham</p>
+                        <p>-Linh</p>
+                    </div>
+                    <div class="col-lg-2 col-12">
+                        <h4><b>I Love You</b></h4>
+                        <p>-Trang</p>
+                        <p>-Mai</p>
+                        <p>-Huyen</p>
+                        <p>-Tham</p>
+                        <p>-Linh</p>
+                    </div>
+                    <div class="col-lg-2 col-12">
+                        <h4><b>I Love You</b></h4>
+                        <p>-Trang</p>
+                        <p>-Mai</p>
+                        <p>-Huyen</p>
+                        <p>-Tham</p>
+                        <p>-Linh</p>
+                    </div>
+                    <div class="col-lg-3 col-12">
+                        <h4>Lorem ipsum dolor sit amet.</h4>
+                        <p>Lorem ipsum dolor sit  minus voluptatibus quae. Impedit officiis corporis eius culpa quia necessitatibus id minus atque quibusdam!</p>
+                        <img class="img-fluid" src="./img/payment1.png" alt="">
+                    </div>
+                </div>
+                <hr>
+                <div class="center">
+                    <div class="end">
+                        &#8450; 2021 KIDOL. Made with &#128151; by HasThemes
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
 
