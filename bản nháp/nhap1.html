@@ -1,160 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>Menu</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="../Unit14/JS/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        .text-h1 {
+            text-align: center;
+            color: red;
+            width: 100%;
         }
-        ul,ol{
-            list-style: none;
+        .container{
+            background-color: rgb(255, 234, 238);
         }
-        body{
-            font-size: 14px;
-            color: #000;
-            font-weight: 400;
-            line-height: 1.2;
+        h5{
+            color: red;
         }
-        a{
-            text-decoration: none;
-        }
-        .navbar {
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            align-items: center;
-            -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-            justify-content: space-between;
-            padding: 0.5rem 1rem;
-            background-color: #ccc;
-        }
-        .navbar-brand {
-            display: inline-block;
-            padding-top: 0.3125rem;
-            padding-bottom: 0.3125rem;
-            margin-right: 1rem;
-            font-size: 1.25rem;
-            line-height: inherit;
-            white-space: nowrap;
-        }
-        .navbar-toggler {
-            padding: 0.25rem 0.75rem;
-            font-size: 1.25rem;
-            line-height: 1;
-            background-color: transparent;
-            border: 1px solid transparent;
-            border-radius: 0.25rem;
-        }
-        .navbar-collapse {
-            -webkit-box-flex: 1;
-            -ms-flex-positive: 1;
-            flex-grow: 1;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            align-items: center;
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -ms-flex-preferred-size: auto;
-            flex-basis: auto;
-            justify-content: flex-end;
-        }
-        .navbar-nav {
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-orient: vertical;
-            -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-            padding-left: 0;
-            margin-bottom: 0;
-            list-style: none;
-            flex-direction: row;
-        }
-        .navbar-nav .nav-link {
-            padding-right: 0.5rem;
-            padding-left: 0.5rem;
-        }
-        @media (min-width: 992px){
-            .navbar-toggler {
-                display: none;
-            }
-        }
-        @media (max-width: 991px){
-            .navbar-collapse{
-                display: none;
-            }
-            .navbar-collapse.show {
-                display: block;
-                flex-basis: 100%;
-                -webkit-box-flex: 1;
-                -ms-flex-positive: 1;
-                flex-grow: 1;
-                -webkit-box-align: center;
-                -ms-flex-align: center;
-                align-items: center;
-                transition: height .35s ease;
-            }
-            .navbar-collapse.show .navbar-nav{
-                -ms-flex-direction: column;
-                flex-direction: column;
-            }
-            .navbar-collapse.show .navbar-nav .nav-link{
-                display: block;
-                padding: 5px 0;
-            }
+        i{
+            color: blue;
         }
     </style>
 </head>
+
 <body>
     <header>
-        <div class="navbar">
-            <a class="navbar-brand" href="#">Mylogo</a>
-            <button class="navbar-toggler">
-                <i class="fa fa-bars"></i>
-            </button>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <div class="text-h1">
+                    <h1><b>HAPPY WEDDING 👰🤵</b></h1>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="none"></div>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="row">
+                        <div class="col-12">
+                            <p>💌 Thay cho những tấm thiệp hồng không thể trao tay</p>
+                            <p> <b>Vợ Chồng</b> chúng tôi:</p>
+                            <p><b>
+                                    <h5>🤵🏻꧁H҉ồN҉G҉✿S҉ơN҉꧂❤️꧁k̤̈ḧ̤án̤̈ḧ̤✿p̤̈ḧ̤ươn̤̈g̤̈꧂👰</h5>
+                                </b></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <p>
+                                - Trân trọng kính mời toàn thể
+                                <b>cô dì chú bác</b> cùng tất cả <b>anh chị em bạn bè</b> bớt chút thời
+                                gian thu xếp công việc
+                            </p>
+                            <p>
+                                <b>
+                                    <b>
+                                        TỚI DỰ BỮA CƠM THÂN MẬT CÙNG GIA ĐÌNH CHÚNG TÔI 🎀
+                                    </b>
+                                </b>
+                            </p>
+                            <p>
+                                🎉 Lễ thành hôn được tổ chức vào hồi : <b>8H</b> Sáng ngày <b>21/09/2022</b>( tức ngày
+                                <b>26/08/2022</b> âm lịch)
+                            </p>
+                            <p>
+                                Tại nhà 𝐓𝐫𝐚𝐢🤵
+                                Địa chỉ: <i>thôn SONG PHƯƠNG 2 - xã HÙNG XUYÊN - ĐOAN HÙNG - PHÚ THỌ</i> ❣️
+                            </p>
+                            <P>
+                                Vì một vài lý do hoặc thiếu sót không thể trực tiếp gửi thiệp mời đến tận tay mọi người được,
+                                mong mọi người thông cảm 😊
+                                Rất mong sự hiện diện của mọi người và cũng là vinh dự của vợ chồng chúng tôi🎎
+                            </P>
+                            <p>
+                                <iframe class="img-fluid" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3707.4888905513153!2d105.16850691446542!3d21.683731070472575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3134a5bcb7dbdf01%3A0xf9e57e195d804ca4!2zVOG6oXAgaG_DoSB0aOG6r25nIHBoxrDGoW5n!5e0!3m2!1svi!2s!4v1662914342347!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </p>
+                        </div>
+                    </div>
+                
+                </div>
 
-            <div class="navbar-collapse">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#">Service</a>
-                    </li>
-                </ul>
+
+                <div class="col-lg-6 col-md-6 col-12">
+                    <img class="img-fluid" src="./img/anh-cuoi5.jpg" alt="">
+                </div>
             </div>
         </div>
-    </header>
-<script>
-    $('.navbar-toggler').on('click', function (){
-        var icon_bar = $(this).find('.fa');
-        if(icon_bar.hasClass('fa-bars')){
-            $('.navbar-collapse').addClass('show');
-            icon_bar.removeClass('fa-bars').addClass('fa-times');
-        } else{
-            $('.navbar-collapse').removeClass('show');
-            icon_bar.addClass('fa-bars').removeClass('fa-times');
-        }
-    });
-</script>
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+
 </body>
+
 </html>
